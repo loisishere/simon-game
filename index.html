@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  	<h1>Simon</h1>
+		<div class="marker_select">
+	Choice your Marker:
+	<input type="radio" value="easy" name="level" checked="true"><label>Easy</label><span>(Fewer levels,slower sequence)</span>
+	<input type="radio" value="hard" name="level"><label>Hard</label><span>(More levels,faster sequence)</span><br>
+Round: <span class="round">0</span>
+<div><br>
+<button class="play">PLAY</button>
+</div>
+
+  <div class="msg hidden">
+    <h2>You win!!!</h2>
+  </div>
+
+</div><br>
+	<div class="container">
+<div class="corner red" id="1" data-tile="1"><audio id ="clip1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload></audio></div>
+<div class="corner yellow" id="2" data-tile="2"><audio id ="clip2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload></audio></div>
+<div class="corner blue" id="3" data-tile="3"><audio id ="clip3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload></audio></div>
+<div class="corner green" id="4" data-tile="4"><audio id ="clip4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload></audio></div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+      <script src="js/index.js"></script>
+
+</body>
+</html>
